@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <title>Redirecting to Tecnarit</title>
+    <meta name="description" content="Not an Uber, but we do drive quality! Redirecting to Tecnarit's website in a few seconds." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Open Graph tags for better social media sharing -->
+    <meta property="og:title" content="Redirecting to Tecnarit" />
+    <meta property="og:description" content="Not an Uber, but we do drive quality! Redirecting to Tecnarit's website." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tecnarit.com" />
+    <style>
+      /* Inline critical CSS for faster loading */
+      :root {
+        --tecnarit-green: #6EEA6E;
+        --bg-dark: #111111;
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg-dark);
+        color: white;
+      }
+      
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 1rem;
+        position: relative;
+        z-index: 10;
+      }
+      
+      .content {
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        background-color: rgba(30, 30, 30, 0.7);
+        backdrop-filter: blur(8px);
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+      
+      .logo {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 2rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.3;
+      }
+      
+      .message {
+        margin-bottom: 1.5rem;
+      }
+      
+      .progress-bar {
+        width: 100%;
+        height: 0.75rem;
+        background-color: rgba(100, 100, 100, 0.5);
+        border-radius: 999px;
+        margin-bottom: 2rem;
+        overflow: hidden;
+      }
+      
+      .progress {
+        height: 100%;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--tecnarit-green) 0%, #4CAF50 100%);
+        transition: width 0.1s linear;
+      }
+      
+      .button {
+        background-color: var(--tecnarit-green);
+        color: white;
+        font-weight: 500;
+        padding: 0.75rem 2rem;
+        border-radius: 0.375rem;
+        border: none;
+        font-size: 1.125rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .button:hover {
+        background-color: rgba(110, 234, 110, 0.9);
+      }
+      
+      /* Code animation background */
+      .code-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        opacity: 0.7;
+        overflow: hidden;
+      }
+      
+      .highlight {
+        color: var(--tecnarit-green);
+        font-weight: 500;
+      }
+      
+      /* Tecnarit Logo - Base64 encoded for better loading */
+      .tecnarit-logo {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 2rem;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="code-background" class="code-background"></div>
+    
+    <div class="container">
+      <div class="content">
+        <!-- Inline SVG for Tecnarit logo (simplified version) -->
+        <svg class="tecnarit-logo" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg">
+          <path d="M36 30h428c3.3 0 6 2.7 6 6v48c0 3.3-2.7 6-6 6H36c-3.3 0-6-2.7-6-6V36c0-3.3 2.7-6 6-6z" fill="none"/>
+          <path d="M72 40v40h-8V40h8zm18.5 0c7.7 0 13.5 4.9 13.5 12.7v1.8h-8v-1.4c0-3.3-2.3-5.2-5.3-5.2-3 0-5.2 1.9-5.2 5.2 0 10.8 18.5 4.5 18.5 17.3 0 7.8-5.9 12.7-13.7 12.7-7.9 0-13.8-4.9-13.8-12.7v-3.5h8v3.1c0 3.3 2.5 5.2 5.6 5.2 3.1 0 5.6-1.9 5.6-5.2 0-10.8-18.5-4.5-18.5-17.3 0-7.8 5.7-12.7 13.3-12.7zm34.7 0c7.7 0 13.4 5.5 13.4 13.7v12.7c0 8.2-5.7 13.7-13.4 13.7-7.8 0-13.5-5.5-13.5-13.7V53.7c0-8.2 5.7-13.7 13.5-13.7zm-0.2 7.9c-2.8 0-5.1 2.1-5.1 5.5v13.2c0 3.4 2.3 5.5 5.1 5.5 2.8 0 5-2.1 5-5.5V53.4c0-3.4-2.2-5.5-5-5.5zm52.4-7.9v8h-8.6v32h-8V48h-8.6v-8h25.2zm8.1 0v40h-8V40h8zm18.5 0c7.7 0 13.5 4.9 13.5 12.7v1.8h-8v-1.4c0-3.3-2.3-5.2-5.3-5.2-3 0-5.2 1.9-5.2 5.2 0 10.8 18.5 4.5 18.5 17.3 0 7.8-5.9 12.7-13.7 12.7-7.9 0-13.8-4.9-13.8-12.7v-3.5h8v3.1c0 3.3 2.5 5.2 5.6 5.2 3.1 0 5.6-1.9 5.6-5.2 0-10.8-18.5-4.5-18.5-17.3 0-7.8 5.7-12.7 13.3-12.7zm34.1 0c7.9 0 13.6 5.5 13.6 13.7v12.7c0 8.2-5.7 13.7-13.6 13.7h-12.8V40h12.8zm-0.2 7.9h-4.6v24.2h4.6c3 0 5.1-2.1 5.1-5.5V53.4c0-3.4-2.1-5.5-5.1-5.5zm30.8-7.9v40h-8V40h8zm11.3 0v32.1h13V80h-21V40h8zm20 0v40h-8V40h8z" fill="#6EEA6E"/>
+        </svg>
+        
+        <h1>"Not an Uber, but we do drive quality!"</h1>
+        
+        <p class="message">
+          Redirecting to <span class="highlight">tecnarit.com</span> in <span id="countdown" class="highlight">6</span> seconds
+        </p>
+        
+        <div class="progress-bar">
+          <div id="progress" class="progress" style="width: 0%"></div>
+        </div>
+        
+        <button id="redirect-button" class="button">Can't wait!</button>
+      </div>
+    </div>
+    
+    <script>
+      // Redirect functionality
+      const redirectUrl = "https://www.tecnarit.com";
+      const secondsTotal = 6;
+      let elapsed = 0;
+      const interval = 10; // update every 10ms
+      
+      // Elements
+      const countdownElement = document.getElementById('countdown');
+      const progressElement = document.getElementById('progress');
+      const redirectButton = document.getElementById('redirect-button');
+      
+      // Manual redirect
+      redirectButton.addEventListener('click', () => {
+        window.location.href = redirectUrl;
+      });
+      
+      // Automated redirect with progress
+      const timer = setInterval(() => {
+        elapsed += interval;
+        const totalDuration = secondsTotal * 1000;
+        
+        // Update progress bar
+        const currentProgress = (elapsed / totalDuration) * 100;
+        progressElement.style.width = `${currentProgress}%`;
+        
+        // Update countdown text
+        const currentSecond = Math.ceil((totalDuration - elapsed) / 1000);
+        if (countdownElement.textContent !== currentSecond.toString()) {
+          countdownElement.textContent = currentSecond.toString();
+        }
+        
+        // Redirect when timer completes
+        if (elapsed >= totalDuration) {
+          clearInterval(timer);
+          window.location.href = redirectUrl;
+        }
+      }, interval);
+      
+      // Code background animation
+      function createCodeBackground() {
+        const codeBackground = document.getElementById('code-background');
+        const lines = [];
+        
+        // Create animated code lines
+        for (let i = 0; i < 20; i++) {
+          createCodeLine(codeBackground, i * 150);
+        }
+        
+        function createCodeLine(parent, delay) {
+          const line = document.createElement('div');
+          line.style.position = 'absolute';
+          line.style.color = 'rgba(100, 255, 100, 0.3)';
+          line.style.fontSize = '14px';
+          line.style.fontFamily = 'monospace';
+          line.style.whiteSpace = 'nowrap';
+          line.style.left = `${Math.random() * 100}%`;
+          line.style.top = `${Math.random() * 100}%`;
+          line.style.opacity = '0';
+          line.style.transform = 'translateY(20px)';
+          line.style.transition = 'opacity 0.5s, transform 0.5s';
+          
+          // Create random code content
+          line.textContent = getRandomCode();
+          
+          parent.appendChild(line);
+          
+          // Animate line entrance
+          setTimeout(() => {
+            line.style.opacity = '1';
+            line.style.transform = 'translateY(0)';
+            
+            // Simulate typing/testing
+            setTimeout(() => {
+              animateTypingTest(line);
+            }, 1000 + Math.random() * 2000);
+            
+          }, delay);
+          
+          return line;
+        }
+        
+        function animateTypingTest(lineElement) {
+          const originalText = lineElement.textContent;
+          const textLength = originalText.length;
+          
+          // Simulate typing tests
+          for (let i = 0; i < 3; i++) {
+            setTimeout(() => {
+              // Highlight part of text in green (test passed)
+              const highlightPos = Math.floor(Math.random() * (textLength - 10));
+              const highlight = document.createElement('span');
+              highlight.style.color = '#6EEA6E';
+              highlight.style.fontWeight = 'bold';
+              
+              // Create new content with highlighted part
+              const before = originalText.substring(0, highlightPos);
+              const highlighted = originalText.substring(highlightPos, highlightPos + 10);
+              const after = originalText.substring(highlightPos + 10);
+              
+              lineElement.innerHTML = before;
+              highlight.textContent = highlighted;
+              lineElement.appendChild(highlight);
+              lineElement.innerHTML += after;
+              
+              // Add test result comment
+              const comment = document.createElement('span');
+              comment.style.color = '#6EEA6E';
+              comment.style.marginLeft = '10px';
+              comment.textContent = '// test passed';
+              lineElement.appendChild(comment);
+              
+              // Fade out and remove after some time
+              setTimeout(() => {
+                lineElement.style.opacity = '0';
+                lineElement.style.transform = 'translateY(-20px)';
+                
+                setTimeout(() => {
+                  if (lineElement.parentNode) {
+                    lineElement.parentNode.removeChild(lineElement);
+                    
+                    // Create a new line to replace this one
+                    createCodeLine(codeBackground, 100);
+                  }
+                }, 500);
+              }, 2000 + Math.random() * 1000);
+              
+            }, i * 1000);
+          }
+        }
+        
+        function getRandomCode() {
+          const codeSamples = [
+            'function testQuality() { expect(result).toBe("excellent"); }',
+            'test("user authentication", async () => { await expect(login()).resolves.toBe(true); });',
+            'const quality = calculateMetrics(codebase); assert(quality > 95);',
+            'QualityAssurance.runTests(module).then(report => console.log(report));',
+            'CI.pipeline.execute(tests, { coverage: true, linting: true });',
+            '@Test public void testPerformance() { assertTrue(response.time < threshold); }',
+            'describe("API", () => { it("should respond within 300ms", async () => {...}); });',
+            'test("data integrity", () => { expect(validation.errors).toEqual([]); });',
+            'const { status, body } = await request(app).get("/api/quality");',
+            'QualityMetrics.analyze(code).then(score => assert(score > 90));',
+            'for (const test of testSuite) { expect(test.result).toBe("pass"); }',
+            'TestRunner.executeAll().then(results => expect(results.failed).toBe(0));'
+          ];
+          
+          return codeSamples[Math.floor(Math.random() * codeSamples.length)];
+        }
+      }
+      
+      // Initialize background animation
+      document.addEventListener('DOMContentLoaded', createCodeBackground);
+    </script>
+  </body>
+</html>
