@@ -13,6 +13,9 @@
     <meta property="og:description" content="Not an Uber, but we do drive quality! Redirecting to Tecnarit's website." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.tecnarit.com" />
+    
+    <!-- Laad de logo fallback script -->
+    <script src="assets/tecnarit-base64.js"></script>
     <style>
       /* Inline critical CSS for faster loading */
       :root {
@@ -133,7 +136,11 @@
     <div class="container">
       <div class="content">
         <div class="logo-container">
+          <!-- Optie 1: SVG bestand inladen -->
           <img src="assets/tecnarit-logo.svg" alt="Tecnarit Logo" class="tecnarit-logo">
+          
+          <!-- Optie 2: Als SVG niet werkt, PNG bestand als backup -->
+          <!-- <img src="assets/tecnarit-logo.png" alt="Tecnarit Logo" class="tecnarit-logo"> -->
         </div>
         
         <h1>"Not an Uber, but we do drive quality!"</h1>
@@ -302,7 +309,23 @@
       }
       
       // Initialize background animation
-      document.addEventListener('DOMContentLoaded', createCodeBackground);
+      document.addEventListener('DOMContentLoaded', function() {
+        createCodeBackground();
+        
+        // Check if the SVG image loads, otherwise use the PNG fallback
+        var logoImg = document.querySelector('.tecnarit-logo');
+        logoImg.onerror = function() {
+          console.log("SVG failed to load, using fallback");
+          // Probeer eerst de PNG versie
+          this.src = 'assets/tecnarit-logo.png';
+          
+          // Als ook dat faalt, gebruik dan de base64 versie
+          this.onerror = function() {
+            console.log("PNG failed to load, using base64 version");
+            this.src = tecnaritLogoBase64;
+          }
+        };
+      });
     </script>
   </body>
 </html>
